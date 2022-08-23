@@ -2,7 +2,6 @@ package com.alarmtestnidilap;
 
 import androidx.annotation.NonNull;
 
-import com.alarm.AlarmModule;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -18,7 +17,6 @@ public class AlarmTestNidilapPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new AlarmTestNidilapModule(reactContext));
-        modules.add(new AlarmModule(reactContext));
         return modules;
     }
 
