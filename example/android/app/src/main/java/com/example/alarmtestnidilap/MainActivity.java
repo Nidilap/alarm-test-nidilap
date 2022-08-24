@@ -1,4 +1,4 @@
-package com.example.alarmtestnidilap;
+package com.example.expoalarmmodule;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

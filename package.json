@@ -1,6 +1,6 @@
 {
   "name": "expo-alarm-module",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

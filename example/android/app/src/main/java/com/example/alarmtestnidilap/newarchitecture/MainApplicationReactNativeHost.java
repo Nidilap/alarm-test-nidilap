@@ -1,4 +1,4 @@
-package com.example.alarmtestnidilap.newarchitecture;
+package com.example.expoalarmmodule.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.example.alarmtestnidilap.BuildConfig;
-import com.example.alarmtestnidilap.newarchitecture.components.MainComponentsRegistry;
-import com.example.alarmtestnidilap.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.example.expoalarmmodule.BuildConfig;
+import com.example.expoalarmmodule.newarchitecture.components.MainComponentsRegistry;
+import com.example.expoalarmmodule.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

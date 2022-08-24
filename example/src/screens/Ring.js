@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { getAlarm, snoozeAlarm, stopAlarm } from 'alarm-test-nidilap';
+import { getAlarm, snoozeAlarm, stopAlarm } from 'expo-alarm-module';
 import Button from '../components/Button';
 import { colors, globalStyles } from '../global';
 

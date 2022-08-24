@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Alarm, { removeAlarm, scheduleAlarm, updateAlarm } from 'alarm-test-nidilap';
+import Alarm, { removeAlarm, scheduleAlarm, updateAlarm } from 'expo-alarm-module';
 import TextInput from '../components/TextInput';
 import DayPicker from '../components/DayPicker';
 import TimePicker from '../components/TimePicker';

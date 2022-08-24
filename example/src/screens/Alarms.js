@@ -1,5 +1,5 @@
 import { Text, View, Button } from 'react-native';
-import { show, getAlarmState, getAllAlarms, disableAlarm, enableAlarm } from 'alarm-test-nidilap';
+import { show, getAlarmState, getAllAlarms, disableAlarm, enableAlarm } from 'expo-alarm-module';
 import AlarmView from '../components/AlarmView';
 import React, { useEffect, useState } from 'react';
 import { globalStyles } from '../global';

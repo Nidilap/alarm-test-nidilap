@@ -1,4 +1,4 @@
-package com.example.alarmtestnidilap.newarchitecture.modules;
+package com.example.expoalarmmodule.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
