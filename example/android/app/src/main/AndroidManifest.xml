@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.example.alarmtestnidilap">
+  package="com.example.expoalarmmodule">
 
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -29,12 +29,12 @@
       </activity>
 
       <receiver
-            android:name="com.alarmtestnidilap.receivers.AlarmReceiver"
+            android:name="com.expoalarmmodule.receivers.AlarmReceiver"
             android:enabled="true"
             android:exported="true"
             />
         <receiver
-          android:name="com.alarmtestnidilap.receivers.BootReceiver"
+          android:name="com.expoalarmmodule.receivers.BootReceiver"
           android:exported="true"
         >
           <intent-filter>
@@ -43,6 +43,6 @@
         </receiver>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
 
-      <service android:name="com.alarmtestnidilap.AlarmService" />
+      <service android:name="com.expoalarmmodule.AlarmService" />
     </application>
 </manifest>

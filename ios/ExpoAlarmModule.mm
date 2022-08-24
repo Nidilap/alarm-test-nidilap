@@ -1,10 +1,10 @@
-#import "AlarmTestNidilap.h"
+#import "ExpoAlarmModule.h"
 
 #ifdef RCT_NEW_ARCH_ENABLED
-#import "RNAlarmTestNidilapSpec.h"
+#import "RNExpoAlarmModuleSpec.h"
 #endif
 
-@implementation AlarmTestNidilap
+@implementation ExpoAlarmModule
 RCT_EXPORT_MODULE()
 
 // Example method
@@ -24,7 +24,7 @@ RCT_REMAP_METHOD(multiply,
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
-    return std::make_shared<facebook::react::NativeAlarmTestNidilapSpecJSI>(params);
+    return std::make_shared<facebook::react::NativeExpoAlarmModuleSpecJSI>(params);
 }
 #endif
 

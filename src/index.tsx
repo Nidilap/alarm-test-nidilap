@@ -2,13 +2,13 @@ import uuid from 'react-native-uuid';
 import { NativeModules, Platform } from 'react-native';
 
 const LINKING_ERROR =
-  `The package 'alarm-test-nidilap' doesn't seem to be linked. Make sure: \n\n` +
+  `The package 'expo-alarm-module' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
 
-const AlarmTestNidilap = NativeModules.AlarmTestNidilap
-  ? NativeModules.AlarmTestNidilap
+const ExpoAlarmModule = NativeModules.ExpoAlarmModule
+  ? NativeModules.ExpoAlarmModule
   : new Proxy(
     {},
     {
@@ -19,11 +19,11 @@ const AlarmTestNidilap = NativeModules.AlarmTestNidilap
   );
 
 export function multiply(a: number, b: number): Promise<number> {
-  return AlarmTestNidilap.multiply(a, b);
+  return ExpoAlarmModule.multiply(a, b);
 }
 
 export function show(text: string): any {
-  return AlarmTestNidilap.show(text);
+  return ExpoAlarmModule.show(text);
 }
 
 
@@ -31,53 +31,53 @@ export async function scheduleAlarm(alarm: Alarm) {
   if (!(alarm instanceof Alarm)) {
     alarm = new Alarm(alarm);
   }
-  await AlarmTestNidilap.set(alarm.toAndroid());
+  await ExpoAlarmModule.set(alarm.toAndroid());
   console.log('scheduling alarm: ', JSON.stringify(alarm))
 }
 
 export async function enableAlarm(uid: number) {
-  await AlarmTestNidilap.enable(uid);
+  await ExpoAlarmModule.enable(uid);
 }
 
 export async function disableAlarm(uid: number) {
-  await AlarmTestNidilap.disable(uid);
+  await ExpoAlarmModule.disable(uid);
 }
 
 export async function stopAlarm() {
-  await AlarmTestNidilap.stop();
+  await ExpoAlarmModule.stop();
 }
 
 export async function snoozeAlarm() {
-  await AlarmTestNidilap.snooze();
+  await ExpoAlarmModule.snooze();
 }
 
 export async function removeAlarm(uid: number) {
-  await AlarmTestNidilap.remove(uid);
+  await ExpoAlarmModule.remove(uid);
 }
 
 export async function updateAlarm(alarm: Alarm) {
   if (!(alarm instanceof Alarm)) {
     alarm = new Alarm(alarm);
   }
-  await AlarmTestNidilap.update(alarm.toAndroid());
+  await ExpoAlarmModule.update(alarm.toAndroid());
 }
 
 export async function removeAllAlarms() {
-  await AlarmTestNidilap.removeAll();
+  await ExpoAlarmModule.removeAll();
 }
 
 export async function getAllAlarms() {
-  const alarms = await AlarmTestNidilap.getAll();
+  const alarms = await ExpoAlarmModule.getAll();
   return alarms.map((a: any) => Alarm.fromAndroid(a));
 }
 
 export async function getAlarm(uid: number) {
-  const alarm = await AlarmTestNidilap.get(uid);
+  const alarm = await ExpoAlarmModule.get(uid);
   return Alarm.fromAndroid(alarm)
 }
 
 export async function getAlarmState() {
-  return AlarmTestNidilap.getState();
+  return ExpoAlarmModule.getState();
 }
 
 export default class Alarm {

@@ -1,11 +1,11 @@
-package com.alarmtestnidilap.receivers;
+package com.expoalarmmodule.receivers;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.alarmtestnidilap.Manager;
+import com.expoalarmmodule.Manager;
 
 public class BootReceiver extends BroadcastReceiver {
 

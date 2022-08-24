@@ -1,4 +1,4 @@
-package com.alarmtestnidilap;
+package com.expoalarmmodule;
 
 import androidx.annotation.NonNull;
 
@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AlarmTestNidilapPackage implements ReactPackage {
+public class ExpoAlarmModulePackage implements ReactPackage {
     @NonNull
     @Override
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new AlarmTestNidilapModule(reactContext));
+        modules.add(new ExpoAlarmModuleModule(reactContext));
         return modules;
     }
 

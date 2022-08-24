@@ -1,6 +1,6 @@
 {
-  "name": "alarm-test-nidilap-example",
-  "description": "Example app for alarm-test-nidilap",
+  "name": "expo-alarm-module-example",
+  "description": "Example app for expo-alarm-module",
   "version": "0.0.1",
   "private": true,
   "scripts": {

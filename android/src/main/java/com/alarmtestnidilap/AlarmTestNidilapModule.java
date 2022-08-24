@@ -1,4 +1,4 @@
-package com.alarmtestnidilap;
+package com.expoalarmmodule;
 
 import android.content.Intent;
 
@@ -17,13 +17,13 @@ import com.facebook.react.module.annotations.ReactModule;
 
 import java.util.ArrayList;
 
-@ReactModule(name = AlarmTestNidilapModule.NAME)
-public class AlarmTestNidilapModule extends ReactContextBaseJavaModule {
+@ReactModule(name = ExpoAlarmModuleModule.NAME)
+public class ExpoAlarmModuleModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
-    public static final String NAME = "AlarmTestNidilap";
+    public static final String NAME = "ExpoAlarmModule";
 
-    public AlarmTestNidilapModule(ReactApplicationContext reactContext) {
+    public ExpoAlarmModuleModule(ReactApplicationContext reactContext) {
       super(reactContext);
       this.reactContext = reactContext;
       Helper.createNotificationChannel(reactContext);

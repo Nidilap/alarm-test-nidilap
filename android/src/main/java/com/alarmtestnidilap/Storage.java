@@ -1,9 +1,9 @@
-package com.alarmtestnidilap;
+package com.expoalarmmodule;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.alarmtestnidilap.R;
+import com.expoalarmmodule.R;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;

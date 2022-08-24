@@ -1,4 +1,4 @@
-package com.alarmtestnidilap;
+package com.expoalarmmodule;
 
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -17,8 +17,8 @@ import android.util.Log;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
-import com.alarmtestnidilap.receivers.AlarmReceiver;
-import com.alarmtestnidilap.receivers.DismissReceiver;
+import com.expoalarmmodule.receivers.AlarmReceiver;
+import com.expoalarmmodule.receivers.DismissReceiver;
 
 import java.util.Calendar;
 

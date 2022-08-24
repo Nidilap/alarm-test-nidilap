@@ -51,9 +51,9 @@ Remember to add tests for your change if possible. Run the unit tests by:
 ```sh
 yarn test
 ```
-To edit the Objective-C files, open `example/ios/AlarmTestNidilapExample.xcworkspace` in XCode and find the source files at `Pods > Development Pods > alarm-test-nidilap`.
+To edit the Objective-C files, open `example/ios/ExpoAlarmModuleExample.xcworkspace` in XCode and find the source files at `Pods > Development Pods > expo-alarm-module`.
 
-To edit the Kotlin files, open `example/android` in Android studio and find the source files at `alarmtestnidilap` under `Android`.
+To edit the Kotlin files, open `example/android` in Android studio and find the source files at `expoalarmmodule` under `Android`.
 ### Commit message convention
 
 We follow the [conventional commits specification](https://www.conventionalcommits.org/en) for our commit messages:

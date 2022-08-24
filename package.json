@@ -1,5 +1,5 @@
 {
-  "name": "alarm-test-nidilap",
+  "name": "expo-alarm-module",
   "version": "0.1.7",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "alarm-test-nidilap.podspec",
+    "expo-alarm-module.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -35,13 +35,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/Nidilap/alarm-test-nidilap",
+  "repository": "https://github.com/Nidilap/expo-alarm-module",
   "author": "Nidilap <nidilap11@hotmail.com> (https://github.com/Nidilap)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Nidilap/alarm-test-nidilap/issues"
+    "url": "https://github.com/Nidilap/expo-alarm-module/issues"
   },
-  "homepage": "https://github.com/Nidilap/alarm-test-nidilap#readme",
+  "homepage": "https://github.com/Nidilap/expo-alarm-module#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

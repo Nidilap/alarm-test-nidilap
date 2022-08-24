@@ -1,4 +1,4 @@
-package com.alarmtestnidilap;
+package com.expoalarmmodule;
 
 import android.app.Notification;
 import android.app.Service;

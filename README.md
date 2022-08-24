@@ -1,15 +1,15 @@
-# alarm-test-nidilap
+# expo-alarm-module
 teste apenas
 ## Installation
 
 ```sh
-npm install alarm-test-nidilap
+npm install expo-alarm-module
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "alarm-test-nidilap";
+import { multiply } from "expo-alarm-module";
 
 // ...
 

@@ -1,4 +1,4 @@
-package com.alarmtestnidilap.receivers;
+package com.expoalarmmodule.receivers;
 
 
 import android.content.BroadcastReceiver;
@@ -8,8 +8,8 @@ import android.os.Build;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.alarmtestnidilap.AlarmService;
-import com.alarmtestnidilap.Manager;
+import com.expoalarmmodule.AlarmService;
+import com.expoalarmmodule.Manager;
 
 public class AlarmReceiver extends BroadcastReceiver {
 

@@ -1,4 +1,4 @@
-package com.alarmtestnidilap.receivers;
+package com.expoalarmmodule.receivers;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

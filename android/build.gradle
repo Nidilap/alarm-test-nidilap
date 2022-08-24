@@ -20,11 +20,11 @@ if (isNewArchitectureEnabled()) {
 }
 
 def getExtOrDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['AlarmTestNidilap_' + name]
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['ExpoAlarmModule_' + name]
 }
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties['AlarmTestNidilap_' + name]).toInteger()
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties['ExpoAlarmModule_' + name]).toInteger()
 }
 
 android {
@@ -132,7 +132,7 @@ dependencies {
 if (isNewArchitectureEnabled()) {
   react {
     jsRootDir = file("../src/")
-    libraryName = "AlarmTestNidilap"
-    codegenJavaPackageName = "com.alarmtestnidilap"
+    libraryName = "ExpoAlarmModule"
+    codegenJavaPackageName = "com.expoalarmmodule"
   }
 }
