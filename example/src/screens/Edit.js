@@ -39,7 +39,6 @@ export default function ({ route, navigation }) {
     if (mode === 'CREATE') {
       try {
         await scheduleAlarm(alarm);
-        console.log("funfou");
       } catch (e) {
         console.log(e)
       }

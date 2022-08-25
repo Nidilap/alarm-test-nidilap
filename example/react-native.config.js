@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   dependencies: {
-    'alarm-test-nidilap': {
+    'expo-alarm-module': {
       root: path.join(__dirname, '..'),
     },
   },
