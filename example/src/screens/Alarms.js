@@ -9,7 +9,7 @@ export default function ({ navigation }) {
   const [scheduler, setScheduler] = useState(null);
 
 
-  const alarmeTeste = () => {
+  const alarmeTeste = async () => {
     let testeAlarme = 
       {
         uid:"4046380f-14bf-4bf0-a91f-740c7fdc5f64",
@@ -21,7 +21,7 @@ export default function ({ navigation }) {
         snoozeInterval:1,
         repeating:false,
         active:true,
-        days: new Date(new Date().getTime()+30000)
+        day: new Date(new Date().getTime()+30000)
       }
     
     await scheduleAlarm(testeAlarme);
@@ -63,7 +63,7 @@ export default function ({ navigation }) {
             title={a.title}
             hour={a.hour}
             minutes={a.minutes}
-            days={a.days}
+            days={a.day}
             isActive={a.active}
           />
         ))}
